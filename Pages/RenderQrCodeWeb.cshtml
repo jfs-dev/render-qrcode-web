@@ -1,0 +1,14 @@
+﻿@page "~/renderqrcodeweb/{content?}"
+@model RenderQrCodeWebModel
+@{
+    ViewData["Title"] = "Renderização QRCode Web";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+  <img src=@Model.imageSource class="rounded" alt="QRCode" width="400" height="400">
+</div>
+
+<div class="col-12">
+    <a asp-page="GenerateQrCodeWeb"><button class="btn btn-primary">Voltar</button></a>
+</div>
